@@ -16,6 +16,7 @@ Menu::Menu(int const & accessLevel, bool suRoots)
 
 void Menu::printMenu(int currentPosition)
 {
+	system("cls");
 	currentPosition--;
 	int iter = 0;
 	for (auto i : menu) {
@@ -33,4 +34,9 @@ Menu::~Menu()
 	this->accessLevel = NULL;
 	this->currentPosition = NULL;
 	this->suRoots = NULL;
+}
+
+int Menu::menuSize()
+{
+	return menu.size();
 }

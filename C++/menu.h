@@ -22,6 +22,7 @@ private:
 public:
 	Menu(int const &accessLevel, bool suRoots = false);
 	void printMenu(int currentPosition=0);
-	~Menu();	
+	~Menu();
+	int menuSize();
 };
 
