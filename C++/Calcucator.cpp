@@ -2,11 +2,13 @@
 
 
 
-Calcucator::Calcucator()
-{
-}
-
-
-Calcucator::~Calcucator()
-{
-}
+//Calcucator::Calcucator()
+//{
+//	
+//}
+//
+//
+//Calcucator::~Calcucator()
+//{
+//	continue;
+//}

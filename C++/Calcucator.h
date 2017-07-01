@@ -2,11 +2,21 @@
 #include <iostream>
 #include <string>
 #include <thread>
+#include "personalOStypes.h"
+#include <vector>
+
+using namespace std;
 
 class Calcucator
 {
+	string unslpitedEquation;
+	vector<char> splitedEquation;
+	vector<string> bufForBrackets;
+	vector<char> splitedBrackets; 
 public:
-	Calcucator();
-	~Calcucator();
+	mathOperations returnOperation();
+	/*Calcucator();
+	~Calcucator();*/
+	void scanEquation();
 };
 
