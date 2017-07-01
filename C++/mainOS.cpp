@@ -11,9 +11,11 @@ int main()
 	Menu menu(0, true);
 	bool fl = 1;
 	int currentPosition = 1;
-	while (fl) {
+	while (fl) 
+	{
 		menu.printMenu(currentPosition);
-		switch (_getch()) {
+		switch (_getch()) 
+		{
 			case 72:
 			{
 				if (currentPosition != 0) currentPosition--;
@@ -23,6 +25,19 @@ int main()
 			{
 				if (menu.menuSize() != currentPosition) currentPosition++;
 				break;
+			}
+			case 13: 
+			{
+				if (currentPosition == menu.menuSize())
+				{
+					fl = false;
+				}
+				/*switch (currentPosition)
+				{
+
+				default:
+					break;
+				}*/
 			}
 		}
 	}

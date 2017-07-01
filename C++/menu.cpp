@@ -10,7 +10,7 @@ Menu::Menu(int const & accessLevel, bool suRoots)
 	menuInputFile.open("menu.txt");
 	while (!menuInputFile.eof()) {
 		string buf; menuInputFile >> buf;
-		menu.insert(menu.begin(), buf);
+		menu.insert(menu.end(), buf);
 	}
 }
 
@@ -18,6 +18,7 @@ void Menu::printMenu(int currentPosition)
 {
 	system("cls");
 	currentPosition--;
+	cout << "Personal OS v0.0 \nDeveloper beta 0\n\n" << endl;
 	int iter = 0;
 	for (auto i : menu) {
 		if (iter==currentPosition) 
@@ -29,14 +30,15 @@ void Menu::printMenu(int currentPosition)
 	}
 }
 
+
+int Menu::menuSize()
+{
+	return menu.size();
+}
+
 Menu::~Menu()
 {
 	this->accessLevel = NULL;
 	this->currentPosition = NULL;
 	this->suRoots = NULL;
-}
-
-int Menu::menuSize()
-{
-	return menu.size();
 }
