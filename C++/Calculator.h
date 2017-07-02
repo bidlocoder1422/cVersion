@@ -7,16 +7,17 @@
 
 using namespace std;
 
-class Calcucator
+class Calculator
 {
 	string unslpitedEquation;
 	vector<char> splitedEquation;
 	vector<string> bufForBrackets;
 	vector<char> splitedBrackets; 
+	vector<int> bufResults;
 public:
 	mathOperations returnOperation();
-	/*Calcucator();
-	~Calcucator();*/
-	void scanEquation();
+	double equationResult();
+	Calculator();
+	//~Calcucator();
 };
 

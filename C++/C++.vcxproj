@@ -111,12 +111,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calcucator.cpp" />
+    <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="mainOS.cpp" />
     <ClCompile Include="menu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Calcucator.h" />
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="personalOStypes.h" />
     <ClInclude Include="menu.h" />
   </ItemGroup>
